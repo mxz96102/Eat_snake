@@ -3,6 +3,6 @@ project(Eat_snake)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-link_libraries(curses)
-set(SOURCE_FILES main.c)
-add_executable(Eat_snake ${SOURCE_FILES})
+link_libraries(curses m)
+set(SOURCE_FILES main.c main.h)
+add_executable(Eat_snake ${SOURCE_FILES} cJSON.h cJSON.c)
